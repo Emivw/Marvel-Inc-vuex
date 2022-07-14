@@ -16,7 +16,7 @@
                             <i class="fas fa-pen-fancy"></i>
                             <h4>Authentic Products</h4>
                             <p>
-                                wield your favorite superheroes weapon. 
+                                be the proud owner favorite superheroes memorabilia. 
                             </p>
                         </div>
                     </div>
