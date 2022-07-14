@@ -60,13 +60,13 @@
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">about</a></li>
                                 <li><a href="#">products</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Meet our Team</a></li>
                                 <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                 <h3>Subscribe</h3>
                             </div>
                             <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                <p>Missing out, subscribe to our new feeds, kindly fill the form below.</p>
                             </div>
                             <div class="subscribe-form">
                                 <form action="#">
@@ -101,10 +101,10 @@
                         <div class="footer-menu">
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">About</a></li>
                                 <li><a href="#">Contact</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Register</a></li>
                             </ul>
                         </div>
                     </div>
@@ -179,7 +179,6 @@ export default {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
 .footer-social-icon a {

@@ -5,7 +5,7 @@
                 <div class="col-md-12">
                     <div class="site-heading text-center">
                         <h2>What we <span>Offer</span></h2>
-                        <h4>Lorem Ipsum is simply dummy text</h4>
+                        <h4>WE take pride in delivering a Quality service</h4>
                     </div>
                 </div>
             </div>
@@ -16,7 +16,7 @@
                             <i class="fas fa-pen-fancy"></i>
                             <h4>Authentic Products</h4>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                wield your favorite superheroes weapon. 
                             </p>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                             <i class="fas fa-dharmachakra"></i>
                             <h4>Product Development</h4>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                ever growing product list. 
                             </p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <i class="fas fa-tasks"></i>
                             <h4>Quality Ensurance</h4>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                stress test of all items. 
                             </p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                             <i class="fas fa-tachometer-alt"></i>
                             <h4>Speedy Delivery</h4>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Same day delivery of your product to your doorstep. 
                             </p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <i class="fas fa-recycle"></i>
                             <h4>Refurbished Products</h4>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                All products are restored to their full glory. 
                             </p>
                         </div>
                     </div>
@@ -74,9 +74,9 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <i class="fas fa-headset"></i>
-                            <h4>24/7 Support</h4>
+                            <h4>24h7 Support</h4>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                have an enquiry? contact our around the clock call centre. 
                             </p>
                         </div>
                     </div>
