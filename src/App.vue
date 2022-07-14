@@ -1,11 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <NavBar />
   <router-view/>
+  <footer-all/>
 </template>
+<script>
+AOS.init();
+import FooterAll from '@/components/FooterAll.vue';
+import NavBar from './components/NavBar.vue';
 
+export default {
+  name: "myApp", // Renaming the app so it won't conflict with the child component
+  components: {
+    FooterAll,
+    NavBar
+}
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -15,16 +25,4 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

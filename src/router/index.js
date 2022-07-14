@@ -9,27 +9,52 @@ const routes = [{
     {
         path: '/about',
         name: 'about',
+
         component: () =>
             import ('../views/About.vue')
     },
     {
-        path: '/',
-        name: 'about',
+        path: '/contact',
+        name: 'contact',
+
         component: () =>
-            import ('../views/AboutView.vue')
+            import ('../views/Contact.vue')
     },
     {
-        path: '/about',
-        name: 'about',
+        path: '/products',
+        name: 'products',
+
         component: () =>
-            import ('../views/AboutView.vue')
+            import ('../views/Products.vue')
     },
     {
-        path: '/about',
-        name: 'about',
+        path: '/products/:id',
+        name: 'product',
+
         component: () =>
-            import ('../views/AboutView.vue')
+            import ('../views/Product.vue')
     },
+    {
+        path: '/admin',
+        name: 'admin',
+
+        component: () =>
+            import ('../views/Admin.vue')
+    },
+    {
+        path: '/login',
+        name: 'login',
+
+        component: () =>
+            import ('../views/Login.vue')
+    },
+    {
+        path: '/register',
+        name: 'register',
+
+        component: () =>
+            import ('../views/Register.vue')
+    }
 ]
 
 const router = createRouter({
