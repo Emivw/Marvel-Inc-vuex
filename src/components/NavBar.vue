@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="" alt="" /></a>
       <button
@@ -117,8 +117,7 @@ nav {
   padding: 30px;
 }
 body {
-  background-color: #f8002f;
-  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+
 }
 
 nav a {
@@ -129,4 +128,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #a70000;
 }
+
 </style>

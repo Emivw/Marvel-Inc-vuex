@@ -5,9 +5,12 @@
     </video>
                   <div class="col-md-12">
                     <div class="site-heading text-center margin">
+                    <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" class="img-fluid">
                         <h2 class="text-white">WE ARE <span>MARVEL INC</span></h2>
                         <h4 class="text-white">The one stop shop for all your hero needs</h4>
+                        
                     </div>
+                    
                 </div>
 </div>
 <Services/>
@@ -69,7 +72,7 @@ html, body {
 	min-height: 100%;
 }
 .margin{
- margin-bottom: 15rem !important;
+margin-top:15rem;
  background-color: rgba(0, 0, 0, 0.6);
  	padding: .5rem 1rem;
 }

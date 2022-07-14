@@ -109,8 +109,7 @@ export default {
   box-sizing: border-box;
 }
 body {
-  background-color: #f8002f;
-  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+
 }
 .social-icons {
   font-size: 3rem;
