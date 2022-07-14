@@ -41,10 +41,15 @@ html, body {
 	justify-content: center;
 	align-items: flex-end;
 }
-	@media(min-width: 480px) {
+	@media(min-width: 250px) {
 		.row-hero {
 			height: 25rem;
 		}
+    .margin{
+      margin-top: 50rem !important;
+ 
+      font-size: 5;
+    }
 	}
 	@media(min-width: 720px) {
 		.row-hero {

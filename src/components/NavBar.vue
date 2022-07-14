@@ -53,17 +53,20 @@
               v-if="!users"
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDropdown"
-            >
+            ><router-link to="/login">
               <li>
                 <a class="dropdown-item" href="#"
-                  ><router-link to="/login">Login</router-link></a
+                  >Login</a
                 >
               </li>
+              </router-link>
+              <router-link to="/register">
               <li>
                 <a class="dropdown-item" href="#"
-                  ><router-link to="/register">Register</router-link></a
+                  >Register</a
                 >
               </li>
+                </router-link>
             </ul>
 
             <ul
@@ -71,16 +74,20 @@
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDropdown"
             >
+              <router-link to="/admin">
               <li>
                 <a class="dropdown-item" href="#"
-                  ><router-link to="/admin">Admin</router-link></a
+                  >Admin</a
                 >
               </li>
+                </router-link>
+              <router-link to="/">
               <li>
                 <a class="dropdown-item" href="#"
-                  ><router-link to="/" @click="logout">logout</router-link></a
+                   @click="logout">logout</a
                 >
               </li>
+                </router-link>
             </ul>
           </li>
         </ul>
