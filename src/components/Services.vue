@@ -16,7 +16,7 @@
                             <i class="fas fa-pen-fancy"></i>
                             <h4>Authentic Products</h4>
                             <p>
-                                be the proud owner favorite superheroes memorabilia. 
+                                be the proud owner of your favorite superheroes memorabilia. 
                             </p>
                         </div>
                     </div>
