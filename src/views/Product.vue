@@ -3,9 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img :src="product.img" :alt="product.title">
+                    <img id="img" :src="product.img" :alt="product.title">
                 </div>
-                <div class="col">
+                <div class="col
+                ">
                           <div class="site-heading text-center my-5">
             <h2 class="text-dark">This is the <span>{{ product.title }}</span></h2>
             <h4 class="text-dark"></h4>
@@ -42,4 +43,11 @@ export default {
 .container{
     height: 100vh;
 }
+#img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
 </style>

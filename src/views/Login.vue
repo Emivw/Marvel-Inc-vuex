@@ -103,6 +103,7 @@ body {
 .login {
   background: url(https://wallpapercave.com/wp/wp4689816.jpg);
   height: 100vh;
+  object-fit: cover +;
 }
 
 form input,
