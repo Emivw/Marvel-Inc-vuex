@@ -1,7 +1,7 @@
 {
     "products": [{
             "id": 1,
-            "title": "The Yaka Arrow",
+            "title": "Yaka Arrow",
             "img": "https://i.postimg.cc/vm1ptC8L/arrow.jpg",
             "img1": "https://i.postimg.cc/nrYzcC6z/arrow1.jpg",
             "img2": "https://i.postimg.cc/Jhw9KPsf/arrow2.jpg",
@@ -13,17 +13,17 @@
             "used_by": "Yandu"
         },
         {
-            "id": 2,
-            "title": "Sling Ring",
-            "img": "https://i.postimg.cc/Tw1KRVx3/ring.webp",
-            "img1": "https://i.postimg.cc/qvrXp55B/ring1.jpg",
-            "img2": "https://i.postimg.cc/ht4zyWYm/ring2.jpg",
-            "img3": "https://i.postimg.cc/s2k2RtTw/ring3.jpg",
-            "desc": "Doctor strange possesses a sling ring which is an essential tool with the power to sustain dimensional portals between any two points on the planet. With this ring, doctor strange can instantly travel wherever he is needed",
-            "category": "Transport",
-            "price": "10000000000",
-            "power": "10",
-            "used_by": "Doctor Steven Strange"
+          "id": 2,
+          "title": "Sheild of Captain America",
+          "img": "https://i.postimg.cc/zfQ6VNWY/captain-america.jpg",
+          "img1": "https://i.postimg.cc/DycN1Lsg/shield1.png",
+          "img2": "https://i.postimg.cc/W4xYsnL2/shieldcap2.jpg",
+          "img3": "https://i.postimg.cc/Vk6KMTzf/shield3.png",
+          "desc": "The most well-known of his shields is a disc-shaped object with a five-pointed star design in its center, within blue, red, and white concentric circles. This shield is composed of a unique combination of Vibranium, steel alloy and a unknown third catalyst, that has never been duplicated, called Proto-Adamantium",
+          "category": "Weapon",
+          "price": "500000",
+          "power": "6",
+          "used_by": "Steve Rogers/Captain America"
         },
         {
             "id": 3,
@@ -40,7 +40,7 @@
         },
         {
             "id": 4,
-            "title": "The Milano",
+            "title": "Milano",
             "img": "https://i.postimg.cc/rwfZdTWF/MILANO.jpg",
             "img1": "https://i.postimg.cc/sxPw3Csz/MILANO1.jpg",
             "img2": "https://i.postimg.cc/dQRBkvcP/MILANO2.jpg",
@@ -66,7 +66,7 @@
         },
         {
             "id": 6,
-            "title": "The Eye of Agamotto",
+            "title": "Eye of Agamotto",
             "img": "https://i.postimg.cc/C1j7SpsN/eye-of-acomoto.jpg",
             "img1": "https://i.postimg.cc/pLFngYZQ/eye-of-acomoto1.jpg",
             "img2": "https://i.postimg.cc/8kXJcnXB/eye2.jpg",
@@ -79,7 +79,7 @@
         },
         {
             "id": 7,
-            "title": "The Infinity Gauntlet",
+            "title": "Infinity Gauntlet",
             "img": "https://i.postimg.cc/FzrB6KXc/gauntlet.jpg",
             "img1": "https://i.postimg.cc/LXTyjMgs/gauntlet1.png",
             "img2": "https://i.postimg.cc/KzMTy7xh/gauntlet3.jpg",
@@ -144,7 +144,7 @@
         },
         {
             "id": 12,
-            "title": "The Iron Spider Armor",
+            "title": "Iron Spider Armor",
             "img": "https://i.postimg.cc/R0z5R4h1/ironspider.jpg",
             "img1": "https://i.postimg.cc/m200LBYx/ironspider1.jpg",
             "img2": "https://i.postimg.cc/DfNN6nYW/ironspider2.jpg",
@@ -157,7 +157,7 @@
         },
         {
             "id": 14,
-            "title": "The Panther Habit",
+            "title": "Panther Habit",
             "img": "https://i.postimg.cc/jjwVt29r/Panther.jpg",
             "img1": "https://i.postimg.cc/bvb6mtWd/panther1.jpg",
             "img2": "https://i.postimg.cc/VLpB2Njt/Panther2.jpg",
@@ -183,7 +183,7 @@
         },
         {
             "id": 16,
-            "title": "The Sling Ring",
+            "title": "Sling Ring",
             "img": "https://i.postimg.cc/Tw1KRVx3/ring.webp",
             "img1": "https://i.postimg.cc/qvrXp55B/ring1.jpg",
             "img2": "https://i.postimg.cc/ht4zyWYm/ring2.jpg",
