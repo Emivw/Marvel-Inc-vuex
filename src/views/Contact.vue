@@ -1,17 +1,17 @@
 <template>
-  <div class="container text-white">
+  <div class="container text-white size">
     <div class="row">
-      <div class="col-md-6 col-xm-12">
+      <div class="col-md-6 col-xm-12 mt-5">
         <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
-        <div class="my-3 social-icons">
+        <div class="my-5 social-icons">
           <a href=""><i class="bi bi-instagram text-danger mx-1"></i></a>
           <a href=""><i class="bi bi-facebook text-primary mx-1"></i></a>
           <a href=""><i class="bi bi-tiktok text-dark mx-1"></i></a>
           <a href=""><i class="bi bi-twitter text-primary2 mx-1"></i></a>
         </div>
       </div>
-      <div class="col-md-5 col-xl-5 col-xm-12">
-        <form>
+      <div class="col-md-4 col-xl-5 col-xm-12 mt-5">
+        <form action="https://formspree.io/f/xknylkka" method="POST">
           <div class="col-md-12">
             <div class="site-heading text-center">
               <h2>Contact<span> Us</span></h2>
@@ -38,9 +38,9 @@
 
           <label for="_replyto"> Subject </label>
           <input
-            type="email"
-            name="_replyto"
-            id="_replyto"
+            type="text"
+            name="_sub"
+            id="_sub"
             placeholder="Subject"
             required
           />
@@ -83,7 +83,9 @@ body {
 .text-primary2 {
   color: aqua;
 }
-
+.size{
+  height: 100vh;
+}
 body {
   font-family: "Montserrat";
   color: rgb(255, 255, 255);

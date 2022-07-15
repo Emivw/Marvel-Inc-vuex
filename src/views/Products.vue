@@ -8,7 +8,7 @@
 
       <div class="container">
          <button @click="sortPrice">sort by price</button>
-        <input type="text" v-model="search" placeholder="search..." />
+        
         <div class="row">
         <div class="col-md-4">
          <label for="category">Category </label>
@@ -75,9 +75,9 @@ export default {
     products() {
       return this.$store.state.products?.filter((product) => {
         let isMatch = true;
-        if (!product.title.toLowerCase().includes(this.search.toLowerCase())) {
-          isMatch = false;
-        }
+        // if (!product.title.toLowerCase().includes(this.search.toLowerCase())) {
+        //   isMatch = false;
+        // }
         if (this.category !== "All" && this.category !== product.category) {
           isMatch = false;
         }

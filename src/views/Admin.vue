@@ -13,7 +13,7 @@
       </nav>
        <div class="container">
          <button @click="sortPrice">sort by price</button>
-        <input type="text" v-model="search" placeholder="search..." />
+        <!-- <input type="text" v-model="search" placeholder="search..." /> -->
         <div class="row">
         <div class="col-md-4">
          <label for="category">Category </label>
@@ -59,25 +59,28 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <form @submit.prevent="createProduct">
         <label for="name"></label>
-        <input type="text" name="" id="add-Name" placeholder="Enter Name" required>
+        <input type="text" name="" id="add-Name" placeholder="Enter Name" v-model="newTitle" required>
         <label for="img"></label>
-        <input type="img" name="" id="add-Img" placeholder="Add Image" required>
+        <input type="img" name="" id="add-Img" v-model="newImg" placeholder="Add Image" required>
         <label for="desc"></label>
-        <input type="text" name="" id="add-Desc" placeholder="Add Description" required>
+        <input type="text" name="" id="add-Desc" v-model="newDesc" placeholder="Add Description" required>
         <label for="category"></label>
-        <input type="text" name="" id="add-Category" placeholder="Add Category Class" required>
+        <input type="text" name="" v-model="newCategory" id="add-Category" placeholder="Add Category Class" required>
         <label for="price"></label>
-        <input type="number" name="" id="add-Price" placeholder="Add Price Value" required>
+        <input type="number" name="" v-model="newPrice" id="add-Price" placeholder="Add Price Value" required>
         <label for="power"></label>
-        <input type="number" name="" id="add-Power" placeholder="Add Power Level" required>
+        <input type="number" name=""  v-model="newPower" id="add-Power" placeholder="Add Power Level" required>
         <label for="usedby"></label>
-        <input type="text" name="" id="add-Usedby" placeholder="Add User" required>
-      </div>
+        <input type="text" name="" id="add-Usedby" v-model="newUsed_by" placeholder="Add User" required>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button @click="$store.dispatch('createProduct')" type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
+    </form>
+          </div>
+
     </div>
   </div>
 </div>
@@ -127,6 +130,13 @@ export default {
       category: "All",
       power: "All",
       price: "All",
+      newTitle: "",
+      newImg: "",
+      newDesc: "",
+      newCategory: "",
+      newPrice: "",
+      newPower: "",
+      newUsed_by: "",
     };
   },
   name: "product",
@@ -137,9 +147,9 @@ export default {
     products() {
       return this.$store.state.products?.filter((product) => {
         let isMatch = true;
-        if (!product.title.toLowerCase().includes(this.search.toLowerCase())) {
-          isMatch = false;
-        }
+        // if (!product.title.toLowerCase().includes(this.search.toLowerCase())) {
+        //   isMatch = false;
+        // }
         if (this.category !== "All" && this.category !== product.category) {
           isMatch = false;
         }
@@ -156,6 +166,17 @@ export default {
     sortPrice() {
       this.$store.commit("sortProductsbyPrice");
     },
+    createProduct() {
+         return this.$store.dispatch("createProduct", {
+      title: this.newTitle,
+      img: this.newImg,
+      desc: this.newDesc,
+      category: this.newCategory,
+      price: this.newPrice,
+      power: this.newPower,
+      used_by: this.newUsed_by,
+      });
+    }
   },
   components: { Modal }
 }

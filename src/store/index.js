@@ -72,25 +72,28 @@ export default createStore({
                 .then((json) => context.commit("setUsers", json))
                 .then(console.log("user created"))
         },
-        createProduct: async(context, id) => {
+        createProduct: async(context, payload) => {
+            console.log(payload)
             fetch(`http://localhost:3000/products/`, {
                     method: 'POST',
                     body: JSON.stringify({
-                        id: id,
-                        title: this.title,
-                        img: this.img,
-                        desc: this.desc,
-                        category: this.category,
-                        price: this.price,
-                        power: this.power,
-                        used_by: this.used_by,
+                        title: payload.title,
+                        img: payload.img,
+                        desc: payload.desc,
+                        category: payload.category,
+                        price: payload.price,
+                        power: payload.power,
+                        used_by: payload.used_by,
                     }),
                     headers: {
                         'Content-type': 'application/json; charset=UTF-8',
                     },
                 })
                 .then((res) => res.json())
-                .then((product) => context.commit("setProduct", product))
+                .then((product) => {
+                    console.log(product)
+                    context.commit("setProduct", product)})
+                
         },
         deleteProduct: async(context, id) => {
             fetch(`http://localhost:3000/products/${id}`)
