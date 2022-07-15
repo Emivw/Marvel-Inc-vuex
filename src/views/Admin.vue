@@ -40,7 +40,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button @click="$store.commit('addProduct')" type="button" class="btn btn-primary">Save changes</button>
+        <button @click="$store.commit('createProduct')" type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -55,7 +55,7 @@
           <th scope="col">category</th>
           <th scope="col">price</th>
           <th scope="col">power</th>
-          <th scope="col">usedby</th>
+          <th scope="col">used_by</th>
           <th scope="col">actions</th>
         </tr>
       </thead>

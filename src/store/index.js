@@ -73,7 +73,7 @@ export default createStore({
                         category: this.category,
                         price: this.price,
                         power: this.power,
-                        usedby: this.usedby,
+                        used_by: this.used_by,
                     }),
                     headers: {
                         'Content-type': 'application/json; charset=UTF-8',
