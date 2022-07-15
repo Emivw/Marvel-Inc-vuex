@@ -61,7 +61,32 @@ export default createStore({
                 .then((response) => response.json())
                 .then((json) => context.commit("setUsers", json))
                 .then(console.log("user created"))
-        }
+        },
+        createProduct: async(context, id) => {
+            fetch(`http://localhost:3000/products/`, {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        id: id,
+                        title: this.title,
+                        img: this.img,
+                        desc: this.desc,
+                        category: this.category,
+                        price: this.price,
+                        power: this.power,
+                        usedby: this.usedby,
+                    }),
+                    headers: {
+                        'Content-type': 'application/json; charset=UTF-8',
+                    },
+                })
+                .then((res) => res.json())
+                .then((product) => context.commit("setProduct", product))
+        },
+        deleteProduct: async(context, id) => {
+            fetch(`http://localhost:3000/products/${id}`)
+                .then((res) => res.json())
+                .then((product) => context.commit("setProduct", product))
+        },
     },
     modules: {}
 })
