@@ -83,7 +83,8 @@ export default {
         }
         if (this.power !== "All" && this.power !== product.power) {
           isMatch = false;
-        }        if (this.price !== "All" && this.price !== product.price) {
+        }
+        if (this.price !== "All" && this.price !== product.price) {
           isMatch = false;
         }
         return isMatch;

@@ -26,11 +26,6 @@
               >
 
 </div>
-            <!-- <h5 class="card-title">
-              <a target="_blank" href="#"
-                >{{ product.desc }}</a
-              >
-            </h5> -->
             <div>
             <h5 class="card-title">
               <a target="_blank" href="#">
