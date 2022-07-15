@@ -2,11 +2,14 @@
     <div v-if="product">
         <div class="container">
             <div class="row">
-                <h2>{{ product.title }}</h2>
                 <div class="col">
                     <img :src="product.img" :alt="product.title">
                 </div>
                 <div class="col">
+                          <div class="site-heading text-center my-5">
+            <h2 class="text-dark">This is the <span>{{ product.title }}</span></h2>
+            <h4 class="text-dark"></h4>
+          </div>
                     <h5>Description:</h5>
                     <p>{{product.desc }}</p>
                     <h5>Price: <span>${{ product.price }}</span></h5>
@@ -34,3 +37,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.container{
+    height: 100vh;
+}
+</style>

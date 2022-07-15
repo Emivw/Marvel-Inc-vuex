@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-    <div class="col-md-12 py-5">
+    <div class="col-md-12 pt-5">
       <div class="site-heading text-center">
         <h2>Browse <span>Our Wares</span></h2>
         <h4></h4>
@@ -8,7 +8,7 @@
     </div>
     <div class="container">
 
-<div v-if="products" class="row">
+<div v-if="products" class="row my-5">
     <ProductCard 
     v-for="product in products" 
     :key="product.id" 

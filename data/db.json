@@ -1,7 +1,7 @@
 {
     "products": [{
             "id": 1,
-            "title": "The Yaka Arrow",
+            "title": "Yaka Arrow",
             "img": "https://i.postimg.cc/vm1ptC8L/arrow.jpg",
             "img1": "https://i.postimg.cc/nrYzcC6z/arrow1.jpg",
             "img2": "https://i.postimg.cc/Jhw9KPsf/arrow2.jpg",
@@ -40,7 +40,7 @@
         },
         {
             "id": 4,
-            "title": "The Milano",
+            "title": "Milano",
             "img": "https://i.postimg.cc/rwfZdTWF/MILANO.jpg",
             "img1": "https://i.postimg.cc/sxPw3Csz/MILANO1.jpg",
             "img2": "https://i.postimg.cc/dQRBkvcP/MILANO2.jpg",
@@ -66,7 +66,7 @@
         },
         {
             "id": 6,
-            "title": "The Eye of Agamotto",
+            "title": "Eye of Agamotto",
             "img": "https://i.postimg.cc/C1j7SpsN/eye-of-acomoto.jpg",
             "img1": "https://i.postimg.cc/pLFngYZQ/eye-of-acomoto1.jpg",
             "img2": "https://i.postimg.cc/8kXJcnXB/eye2.jpg",
@@ -79,7 +79,7 @@
         },
         {
             "id": 7,
-            "title": "The Infinity Gauntlet",
+            "title": "Infinity Gauntlet",
             "img": "https://i.postimg.cc/FzrB6KXc/gauntlet.jpg",
             "img1": "https://i.postimg.cc/LXTyjMgs/gauntlet1.png",
             "img2": "https://i.postimg.cc/KzMTy7xh/gauntlet3.jpg",
@@ -144,7 +144,7 @@
         },
         {
             "id": 12,
-            "title": "The Iron Spider Armor",
+            "title": "Iron Spider Armor",
             "img": "https://i.postimg.cc/R0z5R4h1/ironspider.jpg",
             "img1": "https://i.postimg.cc/m200LBYx/ironspider1.jpg",
             "img2": "https://i.postimg.cc/DfNN6nYW/ironspider2.jpg",
@@ -157,7 +157,7 @@
         },
         {
             "id": 14,
-            "title": "The Panther Habit",
+            "title": "Panther Habit",
             "img": "https://i.postimg.cc/jjwVt29r/Panther.jpg",
             "img1": "https://i.postimg.cc/bvb6mtWd/panther1.jpg",
             "img2": "https://i.postimg.cc/VLpB2Njt/Panther2.jpg",
@@ -183,7 +183,7 @@
         },
         {
             "id": 16,
-            "title": "The Sling Ring",
+            "title": "Sling Ring",
             "img": "https://i.postimg.cc/Tw1KRVx3/ring.webp",
             "img1": "https://i.postimg.cc/qvrXp55B/ring1.jpg",
             "img2": "https://i.postimg.cc/ht4zyWYm/ring2.jpg",

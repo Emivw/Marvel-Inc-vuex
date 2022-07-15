@@ -17,26 +17,34 @@
               <span class="float-start badge rounded-pill bg-success"
                 >${{ product.price }}</span
               >
-
-              <span class="float-end"
+            </div>
+<div>
+              <span class=""
                 ><a href="#" class="small text-muted text-uppercase aff-link btn"
-                  ><router-link :to="{name: 'product', params: {id: product.id}}">view product</router-link></a
+                  >used by {{product.used_by}}</a
                 ></span
               >
-            </div>
+
+</div>
             <!-- <h5 class="card-title">
               <a target="_blank" href="#"
                 >{{ product.desc }}</a
               >
             </h5> -->
+            <div>
             <h5 class="card-title">
               <a target="_blank" href="#">
                 {{product.category}}
               </a>
             </h5>
 
+            </div>
+
             <div class="d-grid gap-2 my-4">
-              <a href="#" class="btn btn-warning bold-btn">add to cart</a>
+                <router-link :to="{name: 'product', params: {id: product.id}}">
+              <a href="#" class="btn button">view product
+                </a>
+                </router-link>
             </div>
             <div class="clearfix mb-1">
               <span class="float-start"
@@ -65,5 +73,20 @@ props: ["product"]
 .card-img-top{
     height: 200px;
     object-fit: cover;
+}
+ .button {
+  background-color: #000000;
+  color: rgb(255, 255, 255) ;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem 0rem;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #FFFFFF;
+  color: rgb(0, 0, 0);
 }
 </style>
