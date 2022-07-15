@@ -6,13 +6,15 @@
         <h4></h4>
       </div>
     </div>
-<div v-if="products">
+    <div class="row">
+<div v-if="products" class="">
     <ProductCard 
     v-for="product in products" 
     :key="product.id" 
     :product="product"/>
 </div>
 <div v-else>Loading....</div>
+</div>
 </div>
 </template>
 

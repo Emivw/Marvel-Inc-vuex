@@ -9,7 +9,7 @@
             <img
               :src="product.img"
               class="card-img-top"
-              :alt="product.title"
+              alt="product.title"
             />
           </a>
 
