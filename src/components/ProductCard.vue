@@ -1,9 +1,5 @@
 <template>
-   <div
-    class="container-fluid bg-trasparent my-4 p-3"
-    style="position: relative">
-    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-      <div class="col hp">
+<div class="col-sm-4">
         <div class="card h-100 shadow-sm" > 
           <a href="#">
             <img
@@ -53,9 +49,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+
+</div>
+   
 </template>
 
 <script>
@@ -66,4 +62,8 @@ props: ["product"]
 
 <style scoped>
 /* @import url("../assets/main.css"); */
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
 </style>
