@@ -1,5 +1,5 @@
 <template>
-<div class="col-sm-4">
+<div class="col-sm-3 my-5 px-5">
         <div class="card h-100 shadow-sm" > 
           <a href="#">
             <img

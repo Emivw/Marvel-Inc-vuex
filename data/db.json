@@ -194,6 +194,16 @@
       "price": "10000000000",
       "power": "10",
       "used_by": "Doctor Steven Strange"
+    },
+    {
+      "title": "test",
+      "img": "test",
+      "desc": "test",
+      "category": "test",
+      "price": 10000,
+      "power": 5,
+      "used_by": "user",
+      "id": 17
     }
   ],
   "users": [

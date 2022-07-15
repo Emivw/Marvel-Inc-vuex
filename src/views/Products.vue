@@ -101,6 +101,7 @@ export default {
 
 <style scoped>
 #app {
-  background: white;
+    background-color: #f8002f;
+  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
 }
 </style>
