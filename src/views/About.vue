@@ -3,10 +3,10 @@
     <div class="row"></div>
   </div>
   <div class="row p-2">
-    <div class="col-md-4 col-xm-12">
+    <div class="col-md-4 col-xm-12 mt-5">
       <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
     </div>
-    <div class="col-md-8 col-xm-12 mt-5 text-white marge">
+    <div class="col-md-8 col-xm-12 mt-4 text-white marge">
       <div class="col-md-12 py-5">
         <div class="site-heading text-center">
           <h2 class="text-white">About <span>Us</span></h2>
