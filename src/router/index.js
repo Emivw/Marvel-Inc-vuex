@@ -32,7 +32,8 @@ const routes = [{
         name: 'product',
 
         component: () =>
-            import ('../views/Product.vue')
+            import ('../views/Product.vue'),
+            props: true
     },
     {
         path: '/admin',
