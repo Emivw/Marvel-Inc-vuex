@@ -7,10 +7,40 @@
       </div>
 
       <div class="container">
+         <button @click="sortPrice">sort by price</button>
         <input type="text" v-model="search" placeholder="search..." />
-        <select v-model="Category">
+        <div class="row">
+        <div class="col-md-4">
+         <label for="category">Category </label>
+        <select v-model="category">
           <option value="All">All</option>
+          <option value="Weapon">Weapon</option>
+          <option value="Transport">Transport</option>
+          <option value="Pet">Pet</option>
+          <option value="Suit">Suit</option>
         </select>
+        </div>
+        <div class="col-md-4">
+        <label for="Power">power level </label>
+                <select v-model="power">
+          <option value="All">All</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+        </select>
+        </div>
+        <div class="col-md-4">
+                <label for="price">price </label>
+                <select v-model="price">
+          <option value="All">All</option>
+          <option value="4000">4000</option>
+          <option value="6000000">6000000</option>
+          <option value="800000000">800000000</option>
+          <option value="100000000000">100000000000</option>
+        </select>
+        </div>
+        </div>
       </div>
     </div>
     <!-- {{products}} -->
@@ -21,7 +51,7 @@
         :product="product"
       />
     </div>
-  <div v-else>Loading....</div>
+    <div v-else>Loading....</div>
   </div>
 </template>
 
@@ -32,7 +62,9 @@ export default {
   data() {
     return {
       search: "",
-      Category: "All",
+      category: "All",
+      power: "All",
+      price: "All",
     };
   },
   name: "product",
@@ -46,7 +78,12 @@ export default {
         if (!product.title.toLowerCase().includes(this.search.toLowerCase())) {
           isMatch = false;
         }
-        if (this.Category !== "All" && this.category !== product.Category) {
+        if (this.category !== "All" && this.category !== product.category) {
+          isMatch = false;
+        }
+        if (this.power !== "All" && this.power !== product.power) {
+          isMatch = false;
+        }        if (this.price !== "All" && this.price !== product.price) {
           isMatch = false;
         }
         return isMatch;
@@ -63,7 +100,7 @@ export default {
 </script>
 
 <style scoped>
-#app{
-background: white;
+#app {
+  background: white;
 }
 </style>

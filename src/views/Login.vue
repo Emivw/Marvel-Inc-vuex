@@ -39,9 +39,9 @@
           </div>
           <div v-else class="site-heading text-center my-5">
             <h2>
-              Welcome <span>{{ users.firstname }}{{ users.lastname }}</span>
+              Welcome <span>{{ users.firstname }} {{ users.lastname }}</span>
             </h2><router-link to="/admin">
-            <button class="btn btn-primary">
+            <button class="btn btn-secondary">
                Admin
             </button></router-link>
           </div>

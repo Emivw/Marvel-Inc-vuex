@@ -11,6 +11,42 @@
         <button type="button" id="addThis" class="btn btn"><router-link to="/">Home</router-link></button>
         <button type="button" class="btn" id="addThis" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
       </nav>
+       <div class="container">
+         <button @click="sortPrice">sort by price</button>
+        <input type="text" v-model="search" placeholder="search..." />
+        <div class="row">
+        <div class="col-md-4">
+         <label for="category">Category </label>
+        <select v-model="category">
+          <option value="All">All</option>
+          <option value="Weapon">Weapon</option>
+          <option value="Transport">Transport</option>
+          <option value="Pet">Pet</option>
+          <option value="Suit">Suit</option>
+        </select>
+        </div>
+        <div class="col-md-4">
+        <label for="Power">power level </label>
+                <select v-model="power">
+          <option value="All">All</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+        </select>
+        </div>
+        <div class="col-md-4">
+                <label for="price">price </label>
+                <select v-model="price">
+          <option value="All">All</option>
+          <option value="4000">4000</option>
+          <option value="6000000">6000000</option>
+          <option value="800000000">800000000</option>
+          <option value="100000000000">100000000000</option>
+        </select>
+        </div>
+        </div>
+      </div>
     </div>
   <div class="container table-responsive py-5 text-white">
 
@@ -40,7 +76,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button @click="$store.commit('createProduct')" type="button" class="btn btn-primary">Save changes</button>
+        <button @click="$store.dispatch('createProduct')" type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -72,7 +108,7 @@
           <td>{{ product.price }}</td>
           <td>{{ product.power }}</td>
           <td>{{ product["used_by"] }}</td>
-          <td><i class="bi bi-trash-fill" @click="$store.commit('deleteProduct',product.id)">Remove Item</i></td>
+          <td><i class="bi bi-trash-fill" @click="$store.dispatch('deleteProduct',product.id)">Remove Item</i></td>
         </tr>
       </tbody>
     </table>
@@ -83,18 +119,47 @@
 
 <script>
 import Modal from '@/components/Modal.vue'
+
 export default {
-    
- mounted() {
+ data() {
+    return {
+      search: "",
+      category: "All",
+      power: "All",
+      price: "All",
+    };
+  },
+  name: "product",
+  mounted() {
     return this.$store.dispatch("getProducts");
   },
   computed: {
     products() {
-      return this.$store.state.products
+      return this.$store.state.products?.filter((product) => {
+        let isMatch = true;
+        if (!product.title.toLowerCase().includes(this.search.toLowerCase())) {
+          isMatch = false;
+        }
+        if (this.category !== "All" && this.category !== product.category) {
+          isMatch = false;
+        }
+        if (this.power !== "All" && this.power !== product.power) {
+          isMatch = false;
+        }        if (this.price !== "All" && this.price !== product.price) {
+          isMatch = false;
+        }
+        return isMatch;
+      });
     },
   },
-  components: { Modal },
-};
+  methods: {
+    sortPrice() {
+      this.$store.commit("sortProductsbyPrice");
+    },
+  },
+  components: { Modal }
+}
+
 </script>
 
 <style>
