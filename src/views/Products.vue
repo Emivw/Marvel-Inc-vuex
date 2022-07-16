@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+  <div class="container-fluid p-5">
+   <div class="container bg-white">
     <div class="col-md-12 pt-5">
-      <div class="site-heading text-center">
+
+
+      <div class="container p-5">
+            <div class="site-heading text-center">
         <h2>Browse <span>Our Wares</span></h2>
         <h4></h4>
       </div>
-
-      <div class="container">
          <button @click="sortPrice">sort by price</button>
         
         <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex flex-column">
          <label for="category">Category </label>
         <select v-model="category">
           <option value="All">All</option>
@@ -20,7 +23,7 @@
           <option value="Suit">Suit</option>
         </select>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex flex-column">
         <label for="Power">power level </label>
                 <select v-model="power">
           <option value="All">All</option>
@@ -30,7 +33,7 @@
           <option value="10">10</option>
         </select>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex flex-column">
                 <label for="price">price </label>
                 <select v-model="price">
           <option value="All">All</option>
@@ -52,6 +55,8 @@
       />
     </div>
     <div v-else>Loading....</div>
+  </div>
+  </div>
   </div>
 </template>
 
@@ -101,7 +106,13 @@ export default {
 
 <style scoped>
 #app {
-    background-color: #f8002f;
-  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+  overflow-x: hidden;
+  background: url("https://i.ibb.co/gvv8MT2/comics-black-and-white-wallpaper-1920x1080.jpg");
+    
 }
+.container-fluid{background-color: rgba(0, 0, 0, 0.6);}
+.rounded{
+  border-radius: 50%;
+}
+
 </style>

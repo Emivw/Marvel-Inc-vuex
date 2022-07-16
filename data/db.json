@@ -1,19 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Yaka Arrow",
-      "img": "https://i.postimg.cc/vm1ptC8L/arrow.jpg",
-      "img1": "https://i.postimg.cc/nrYzcC6z/arrow1.jpg",
-      "img2": "https://i.postimg.cc/Jhw9KPsf/arrow2.jpg",
-      "img3": "https://i.postimg.cc/nrYzcC6z/arrow1.jpg",
-      "desc": "The Yaka Arrow is a whistle-controlled arrow made from Yaka that uses technology native to the Centaurian people. The Yaka Arrow was Yondu Udonta's favored weapon. Highly skilled in its usage, Udonta always kept one in a holster by his side",
-      "category": "Weapon",
-      "price": "800000000",
-      "power": "8",
-      "used_by": "Yandu"
-    },
-    {
       "id": 2,
       "title": "Sheild of Captain America",
       "img": "https://i.postimg.cc/zfQ6VNWY/captain-america.jpg",
@@ -194,16 +181,6 @@
       "price": "10000000000",
       "power": "10",
       "used_by": "Doctor Steven Strange"
-    },
-    {
-      "title": "test",
-      "img": "test",
-      "desc": "test",
-      "category": "test",
-      "price": 10000,
-      "power": 5,
-      "used_by": "user",
-      "id": 17
     }
   ],
   "users": [

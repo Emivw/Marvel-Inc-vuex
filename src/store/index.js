@@ -5,7 +5,7 @@ export default createStore({
         products: null,
         product: null,
         users: null,
-        asc:true,
+        asc: true,
     },
     getters: {},
     mutations: {
@@ -18,8 +18,8 @@ export default createStore({
         setProduct: (state, product) => {
             state.product = product;
         },
-        sortProductsbyPrice:(state) => {
-            state.products.sort((a,b) =>{
+        sortProductsbyPrice: (state) => {
+            state.products.sort((a, b) => {
                 return a.price - b.price;
             });
             if (!state.asc) {
@@ -92,20 +92,17 @@ export default createStore({
                 .then((res) => res.json())
                 .then((product) => {
                     console.log(product)
-                    context.commit("setProduct", product)})
-                
+                    context.commit("setProduct", product)
+                })
+
         },
         deleteProduct: async(context, id) => {
-            fetch(`http://localhost:3000/products/${id}`)
+            fetch(`http://localhost:3000/products/${id}`, {
+                    method: 'DELETE',
+                })
                 .then((res) => res.json())
                 .then((product) => context.commit("setProduct", product))
         },
     },
     modules: {}
 })
-
-
-
-
-
-

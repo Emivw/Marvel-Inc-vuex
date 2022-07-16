@@ -16,7 +16,7 @@
 <Services/>
 </template>
 
-<script>
+<script >
 // @ is an alias to /src
 import Services from '@/components/Services.vue'
 
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 html, body {
 	margin: 0;
 	padding: 0;

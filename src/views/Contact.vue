@@ -1,5 +1,5 @@
 <template>
-  <div class="container text-white size">
+  <div class="container-fluid text-white size">
     <div class="row">
       <div class="col-md-6 col-xm-12 mt-5">
         <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
@@ -63,14 +63,14 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-image: url(https://i.postimg.cc/T1G8LcVz/4715483.jpg);
+.container-fluid {
+    background-image: url(https://i.postimg.cc/T1G8LcVz/4715483.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

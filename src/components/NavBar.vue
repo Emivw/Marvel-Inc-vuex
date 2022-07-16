@@ -39,7 +39,7 @@
               ><router-link to="/contact">Contact</router-link></a
             >
           </li>
-          <li class="nav-item dropdown rounded">
+          <li class="nav-item dropdown rounded" v-if="!users">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -50,44 +50,45 @@
               ><i class="bi bi-person-fill me-2"></i
             ></a>
             <ul
-              v-if="!users"
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDropdown"
-            ><router-link to="/login">
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Login</a
-                >
-              </li>
+            >
+              <router-link to="/login">
+                <li>
+                  <a class="dropdown-item" href="#">Login</a>
+                </li>
               </router-link>
               <router-link to="/register">
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Register</a
-                >
-              </li>
-                </router-link>
+                <li>
+                  <a class="dropdown-item" href="#">Register</a>
+                </li>
+              </router-link>
             </ul>
-
+          </li>
+          <li class="nav-item dropdown rounded" v-if="users">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="bi bi-person-fill me-2"></i
+            ></a>
             <ul
-              v-if="users"
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDropdown"
             >
               <router-link to="/admin">
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Admin</a
-                >
-              </li>
-                </router-link>
+                <li>
+                  <a class="dropdown-item" href="#">Admin</a>
+                </li>
+              </router-link>
               <router-link to="/">
-              <li>
-                <a class="dropdown-item" href="#"
-                   @click="logout">logout</a
-                >
-              </li>
-                </router-link>
+                <li>
+                  <a class="dropdown-item" href="#" @click="logout">logout</a>
+                </li>
+              </router-link>
             </ul>
           </li>
         </ul>
@@ -105,8 +106,8 @@ export default {
   },
   methods: {
     logout() {
-        window.location.reload();
-    //   return this.$store.state.user = null;
+      window.location.reload();
+      //   return this.$store.state.user = null;
     },
   },
 };
@@ -128,5 +129,4 @@ nav a {
 nav a.router-link-exact-active {
   color: #a70000;
 }
-
 </style>

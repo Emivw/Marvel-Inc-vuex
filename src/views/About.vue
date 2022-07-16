@@ -1,206 +1,215 @@
 <template>
-  <div class="container py-2">
-    <div class="row"></div>
-  </div>
-  <div class="row p-2">
-    <div class="col-md-4 col-xm-12 mt-5">
-      <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
-    </div>
-    <div class="col-md-8 col-xm-12 mt-4 text-white marge">
-      <div class="col-md-12 py-5">
+<div class="overlay ">
+  <div class="margi py-5">
+    <div class="container-fluid marge">
+      <div class="row p-2 text-white bg-white marge">
+        <div class="col-md-4 col-xm-12 mt-5">
+          <img src="https://i.postimg.cc/T2j1k3Gk/logo.png" alt="logo" />
+        </div>
+        <div class="col-md-8 py-5">
+          <div class="site-heading text-center">
+            <h2 class="text-dark">About <span>Us</span></h2>
+            <h4></h4>
+          </div>
+          <p class="h5 text-dark">
+            Marvel Inc was founded in 2022 in Cape Town, South Africa.Four
+            average youngsters showed that big ideas start small and in unlikely
+            places. The founding members came up with the idea while they were
+            enrolled in a brilliant and successful coding academy by the name of
+            Life Choices based in Lansdowne. After they graduated, they came
+            together like the Avengers before them and started a website to sell
+            the items that they gathered around the galaxy. They were so
+            successful that they replaced the Guardians of the Galaxy forcing
+            them to go out of business.
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid bg-white py-5">
         <div class="site-heading text-center">
-          <h2 class="text-white">About <span>Us</span></h2>
+          <h2 class="text-dark">Meet the <span>team</span></h2>
           <h4></h4>
         </div>
-        <p class="h5 text-white">
-          Marvel Inc was founded in 2022 in Cape Town, South Africa.Four average
-          youngsters showed that big ideas start small and in unlikely places.
-          The founding members came up with the idea while they were enrolled in
-          a brilliant and successful coding academy by the name of Life Choices
-          based in Lansdowne. After they graduated, they came together like the
-          Avengers before them and started a website to sell the items that they
-          gathered around the galaxy. They were so successful that they replaced
-          the Guardians of the Galaxy forcing them to go out of business.
-        </p>
-      </div>
-    </div>
-    <h3 class="display-6 text-white">Meet The Team</h3>
-    <div
-      class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 marg"
-    >
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="text-center">
-            <div class="img-hover-zoom img-hover-zoom--colorize">
-              <img
-                class="shadow"
-                src="https://i.postimg.cc/pTkRxgpj/Super.jpg"
-                alt="Another Image zoom-on-hover effect"
-              />
-            </div>
-          </div>
+        <div
+          class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 marg bg-white"
+        >
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="text-center">
+                <div class="img-hover-zoom img-hover-zoom--colorize">
+                  <img
+                    class="shadow"
+                    src="https://i.postimg.cc/pTkRxgpj/Super.jpg"
+                    alt="Another Image zoom-on-hover effect"
+                  />
+                </div>
+              </div>
 
-          <div class="card-body">
-            <div class="clearfix mb-3"></div>
+              <div class="card-body">
+                <div class="clearfix mb-3"></div>
 
-            <div class="my-2 text-center">
-              <h1>Taucia Jackson</h1>
-            </div>
-            <div class="mb-3">
-              <h2 class="text-uppercase text-center role">team Leader</h2>
-            </div>
-            <div class="box">
-              <div>
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <i class="fab fa-github"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-linkedin-in text-primary"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-instagram text-danger"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-twitter text-primary"></i>
-                  </li>
-                </ul>
+                <div class="my-2 text-center">
+                  <h1>Taucia Jackson</h1>
+                </div>
+                <div class="mb-3">
+                  <h2 class="text-uppercase text-center role">team Leader</h2>
+                </div>
+                <div class="box">
+                  <div>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fab fa-github"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-linkedin-in text-primary"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-instagram text-danger"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-twitter text-primary"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="text-center">
-            <div class="img-hover-zoom img-hover-zoom--colorize">
-              <img
-                class="shadow"
-                src="https://i.postimg.cc/y6GZB9md/LS2.jpg"
-                alt="Another Image zoom-on-hover effect"
-              />
-            </div>
-          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="text-center">
+                <div class="img-hover-zoom img-hover-zoom--colorize">
+                  <img
+                    class="shadow"
+                    src="https://i.postimg.cc/y6GZB9md/LS2.jpg"
+                    alt="Another Image zoom-on-hover effect"
+                  />
+                </div>
+              </div>
 
-          <div class="card-body">
-            <div class="clearfix mb-3"></div>
+              <div class="card-body">
+                <div class="clearfix mb-3"></div>
 
-            <div class="my-2 text-center">
-              <h1>Mr Jankowski</h1>
-            </div>
-            <div class="mb-3">
-              <h2 class="text-uppercase text-center role">Content Manager</h2>
-            </div>
-            <div class="box">
-              <div>
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <i class="fab fa-github"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-linkedin-in text-primary"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-instagram text-danger"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-twitter text-primary"></i>
-                  </li>
-                </ul>
+                <div class="my-2 text-center">
+                  <h1>Mr Jankowski</h1>
+                </div>
+                <div class="mb-3">
+                  <h2 class="text-uppercase text-center role">
+                    Content Manager
+                  </h2>
+                </div>
+                <div class="box">
+                  <div>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fab fa-github"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-linkedin-in text-primary"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-instagram text-danger"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-twitter text-primary"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="text-center">
-            <div class="img-hover-zoom img-hover-zoom--colorize">
-              <img
-                class="shadow"
-                src="https://i.postimg.cc/7hpvYX9w/Emile.jpg"
-                alt="Another Image zoom-on-hover effect"
-              />
-            </div>
-          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="text-center">
+                <div class="img-hover-zoom img-hover-zoom--colorize">
+                  <img
+                    class="shadow"
+                    src="https://i.postimg.cc/7hpvYX9w/Emile.jpg"
+                    alt="Another Image zoom-on-hover effect"
+                  />
+                </div>
+              </div>
 
-          <div class="card-body">
-            <div class="clearfix mb-3"></div>
+              <div class="card-body">
+                <div class="clearfix mb-3"></div>
 
-            <div class="my-2 text-center">
-              <h1>Emile Van Wyk</h1>
-            </div>
-            <div class="mb-3">
-              <h2 class="text-uppercase text-center role">
-                Full-Stacks Developer / Project Head of Developement
-              </h2>
-            </div>
-            <div class="box">
-              <div>
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <i class="fab fa-github"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-linkedin-in text-primary"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-instagram text-danger"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-twitter text-primary"></i>
-                  </li>
-                </ul>
+                <div class="my-2 text-center">
+                  <h1>Emile Van Wyk</h1>
+                </div>
+                <div class="mb-3">
+                  <h2 class="text-uppercase text-center role">
+                    Full-Stacks Developer / Project Head of Developement
+                  </h2>
+                </div>
+                <div class="box">
+                  <div>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fab fa-github"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-linkedin-in text-primary"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-instagram text-danger"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-twitter text-primary"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="text-center">
-            <div class="img-hover-zoom img-hover-zoom--colorize">
-              <img
-                class="shadow"
-                src="https://i.postimg.cc/W1tv6FDB/Daniel.jpg"
-                alt="Another Image zoom-on-hover effect"
-              />
-            </div>
-          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="text-center">
+                <div class="img-hover-zoom img-hover-zoom--colorize">
+                  <img
+                    class="shadow"
+                    src="https://i.postimg.cc/W1tv6FDB/Daniel.jpg"
+                    alt="Another Image zoom-on-hover effect"
+                  />
+                </div>
+              </div>
 
-          <div class="card-body">
-            <div class="clearfix mb-3"></div>
+              <div class="card-body">
+                <div class="clearfix mb-3"></div>
 
-            <div class="my-2 text-center">
-              <h1>Daniel Fredricks</h1>
-            </div>
-            <div class="mb-3">
-              <h2 class="text-uppercase text-center role">
-                Back-End Developer
-              </h2>
-            </div>
-            <div class="box">
-              <div>
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <i class="fab fa-github"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-linkedin-in text-primary"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-instagram text-danger"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-twitter text-primary"></i>
-                  </li>
-                </ul>
+                <div class="my-2 text-center">
+                  <h1>Daniel Fredricks</h1>
+                </div>
+                <div class="mb-3">
+                  <h2 class="text-uppercase text-center role">
+                    Back-End Developer
+                  </h2>
+                </div>
+                <div class="box">
+                  <div>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fab fa-github"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-linkedin-in text-primary"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-instagram text-danger"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fab fa-twitter text-primary"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -208,7 +217,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 :root {
@@ -220,12 +229,18 @@ export default {};
 .marge {
   margin-bottom: 12rem;
 }
-
-body {
+.margi {
+  background: url("https://i.ibb.co/gvv8MT2/comics-black-and-white-wallpaper-1920x1080.jpg");
   overflow-x: hidden;
-  background-color: #f8002f;
-  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
 }
+
+.container-fluid {
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
 
 .text-aqua {
   color: aqua;

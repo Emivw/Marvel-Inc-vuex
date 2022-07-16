@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid table-responsive" id="grad">
+  <div class="container-fluid table-responsive py-5" id="grad">
 
     <div class="site-heading text-center">
         <h2 class="text-white">Admin <span>Page</span></h2>
@@ -15,7 +15,7 @@
          <button @click="sortPrice">sort by price</button>
         <!-- <input type="text" v-model="search" placeholder="search..." /> -->
         <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex flex-column">
          <label for="category">Category </label>
         <select v-model="category">
           <option value="All">All</option>
@@ -25,7 +25,7 @@
           <option value="Suit">Suit</option>
         </select>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex flex-column">
         <label for="Power">power level </label>
                 <select v-model="power">
           <option value="All">All</option>
@@ -35,7 +35,7 @@
           <option value="10">10</option>
         </select>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex flex-column">
                 <label for="price">price </label>
                 <select v-model="price">
           <option value="All">All</option>
@@ -111,7 +111,7 @@
           <td>{{ product.price }}</td>
           <td>{{ product.power }}</td>
           <td>{{ product["used_by"] }}</td>
-          <td><i class="bi bi-trash-fill" @click="$store.dispatch('deleteProduct',product.id)">Remove Item</i></td>
+          <td><a><i class="bi bi-trash-fill" @click.prevent="$store.dispatch('deleteProduct',product.id)">Remove Item</i></a></td>
         </tr>
       </tbody>
     </table>
@@ -165,6 +165,10 @@ export default {
   methods: {
     sortPrice() {
       this.$store.commit("sortProductsbyPrice");
+    },
+    deleteProduct(){
+      return
+      $store.dispatch('deleteProduct',product.id)
     },
     createProduct() {
          return this.$store.dispatch("createProduct", {
