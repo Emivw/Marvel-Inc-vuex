@@ -181,6 +181,36 @@
       "price": "10000000000",
       "power": "10",
       "used_by": "Doctor Steven Strange"
+    },
+    {
+      "title": "a",
+      "img": "a",
+      "desc": "a",
+      "category": "a",
+      "price": 80000,
+      "power": 8,
+      "used_by": "new",
+      "id": 17
+    },
+    {
+      "title": "b",
+      "img": "bb",
+      "desc": "bb",
+      "category": "bb",
+      "price": 2112,
+      "power": 44,
+      "used_by": "tsrt",
+      "id": 18
+    },
+    {
+      "title": "b",
+      "img": "bb",
+      "desc": "bb",
+      "category": "bb",
+      "price": 2112,
+      "power": 44,
+      "used_by": "tsrt",
+      "id": 19
     }
   ],
   "users": [

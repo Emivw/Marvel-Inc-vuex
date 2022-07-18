@@ -111,7 +111,128 @@
           <td>{{ product.price }}</td>
           <td>{{ product.power }}</td>
           <td>{{ product["used_by"] }}</td>
-          <td><a><i class="bi bi-trash-fill" @click.prevent="$store.dispatch('deleteProduct',product.id)">Remove Item</i></a></td>
+          <td>
+          <button><a><i class="bi bi-trash-fill" @click.prevent="$store.dispatch('deleteProduct',product.id)">Remove Item</i></a></button>
+              <button
+                type="button"
+                class="btn"
+                id="addThis"
+                data-bs-toggle="modal"
+                :data-bs-target="'#exampleModal' + product.id"
+              >
+                <i
+                  class="bi bi-pencil-square"
+                  @click="$store.dispatch('editProduct', product.id)"
+                  >Edit Item</i
+                >
+              </button>
+              <div
+                class="modal fade"
+                :id="'exampleModal' + product.id"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Modal title
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form @submit.prevent="editProduct">
+                        <label for="name"></label>
+                        <input
+                          type="text"
+                          name=""
+                          id="add-Name"
+                          placeholder="Enter Name"
+                          v-model="product.title"
+                          required
+                        />
+                        <label for="img"></label>
+                        <input
+                          type="img"
+                          name=""
+                          id="add-Img"
+                          v-model="newImg"
+                          placeholder="Add Image"
+                          required
+                        />
+                        <label for="desc"></label>
+                        <input
+                          type="text"
+                          name=""
+                          id="add-Desc"
+                          v-model="newDesc"
+                          placeholder="Add Description"
+                          required
+                        />
+                        <label for="category"></label>
+                        <input
+                          type="text"
+                          name=""
+                          v-model="newCategory"
+                          id="add-Category"
+                          placeholder="Add Category Class"
+                          required
+                        />
+                        <label for="price"></label>
+                        <input
+                          type="number"
+                          name=""
+                          v-model="newPrice"
+                          id="add-Price"
+                          placeholder="Add Price Value"
+                          required
+                        />
+                        <label for="power"></label>
+                        <input
+                          type="number"
+                          name=""
+                          v-model="newPower"
+                          id="add-Power"
+                          placeholder="Add Power Level"
+                          required
+                        />
+                        <label for="usedby"></label>
+                        <input
+                          type="text"
+                          name=""
+                          id="add-Usedby"
+                          v-model="newUsed_by"
+                          placeholder="Add User"
+                          required
+                        />
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Save changes
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
         </tr>
       </tbody>
     </table>
@@ -179,7 +300,19 @@ export default {
       price: this.newPrice,
       power: this.newPower,
       used_by: this.newUsed_by,
-      });
+      })
+      },
+          editProduct() {
+      return this.$store.dispatch("editProduct", {
+        id: this.product.id,
+      title: this.newTitle,
+      img: this.newImg,
+      desc: this.newDesc,
+      category: this.newCategory,
+      price: this.newPrice,
+      power: this.newPower,
+      used_by: this.newUsed_by,
+      })
     }
   },
   components: { Modal }

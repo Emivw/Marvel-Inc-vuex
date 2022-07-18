@@ -73,9 +73,9 @@ export default createStore({
                 .then(console.log("user created"))
         },
         createProduct: async(context, payload) => {
-            console.log(payload)
+            console.log(payload);
             fetch(`http://localhost:3000/products/`, {
-                    method: 'POST',
+                    method: "POST",
                     body: JSON.stringify({
                         title: payload.title,
                         img: payload.img,
@@ -86,23 +86,46 @@ export default createStore({
                         used_by: payload.used_by,
                     }),
                     headers: {
-                        'Content-type': 'application/json; charset=UTF-8',
+                        "Content-type": "application/json; charset=UTF-8",
                     },
                 })
                 .then((res) => res.json())
                 .then((product) => {
-                    console.log(product)
-                    context.commit("setProduct", product)
-                })
-
+                    console.log(product);
+                    context.dispatch("getProducts", product);
+                });
         },
         deleteProduct: async(context, id) => {
             fetch(`http://localhost:3000/products/${id}`, {
-                    method: 'DELETE',
+                    method: "DELETE",
                 })
                 .then((res) => res.json())
-                .then((product) => context.commit("setProduct", product))
+                .then((json) => context.dispatch("getProducts", json));
+        },
+        editProduct: async(context, payload, id) => {
+            console.log(payload);
+            fetch(`http://localhost:3000/products/` + id, {
+                    method: "PUT",
+                    body: JSON.stringify({
+                        title: payload.title,
+                        img: payload.img,
+                        desc: payload.desc,
+                        category: payload.category,
+                        price: payload.price,
+                        power: payload.power,
+                        used_by: payload.used_by,
+                    }),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8",
+                    },
+                })
+                .then((res) => res.json())
+                .then((product) => {
+                    console.log(product);
+                    context.dispatch("setProducts", product);
+                });
         },
     },
+
     modules: {}
 })
